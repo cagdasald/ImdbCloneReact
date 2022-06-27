@@ -1,0 +1,19 @@
+@import "variables";
+
+.app-button {
+  background: $primary-color !important;
+  color: $white !important;
+  border: none !important;
+  border-radius: 8px !important;
+  height: 42px !important;
+  padding: 0 40px !important;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  &.secondary {
+    background: $secondary-color !important;
+    color: $primary-color !important;
+  }
+}

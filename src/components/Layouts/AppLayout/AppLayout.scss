@@ -1,0 +1,19 @@
+@import "../../../styles/form";
+@import "../../../styles/table";
+
+#app-layout {
+  @extend .form;
+  @extend .table;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .page {
+    display: flex;
+    flex-grow: 1;
+
+    .page-content {
+    }
+  }
+}

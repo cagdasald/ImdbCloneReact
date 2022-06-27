@@ -1,0 +1,14 @@
+@import '../../../styles/modal';
+
+.api-error-modal {
+  @extend .modal;
+
+  .ant-modal-content {
+
+    .ant-modal-body {
+
+      .content {
+      }
+    }
+  }
+}

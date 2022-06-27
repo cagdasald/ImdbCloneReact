@@ -1,0 +1,39 @@
+@import './styles/bootstrap-grid.min.css';
+@import './styles/buttons';
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/Rubik/Rubik-Regular.woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/Rubik/Rubik-Medium.woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('/assets/fonts/Rubik/Rubik-Bold.woff');
+  font-weight: 700;
+}
+
+html,
+body,
+#root {
+  overflow: auto;
+}
+
+body {
+  margin: 0;
+  font-family: Rubik, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+  'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-loading {
+  min-height: 100vh;
+}
