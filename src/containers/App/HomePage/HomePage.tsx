@@ -1,4 +1,3 @@
-import {Button} from "antd";
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators, Dispatch} from 'redux';
@@ -16,13 +15,6 @@ class HomePage extends Component<IProps> {
     return (
       <div id='home-page' className='page'>
         <div className='page-content'>
-          <h1>Home Page</h1>
-          <Button
-            className="app-button secondary"
-            onClick={() => this.props.setMe()}
-          >
-            Logout
-          </Button>
         </div>
       </div>
     );

@@ -5,8 +5,8 @@
   color: $white !important;
   border: none !important;
   border-radius: 8px !important;
-  height: 42px !important;
-  padding: 0 40px !important;
+  height: 35px !important;
+  padding: 0 30px !important;
 
   &:hover {
     opacity: 0.85;
@@ -16,4 +16,10 @@
     background: $secondary-color !important;
     color: $primary-color !important;
   }
+
+  &.transparent {
+    background: transparent !important;
+    color: $white;
+  }
+  
 }
