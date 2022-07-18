@@ -3,18 +3,22 @@ import { connect } from "react-redux";
 import { bindActionCreators, Dispatch } from "redux";
 import { Carousel, Card } from "antd";
 import { IStore } from "../../core/utilities/reducers";
-import "./NewReleases.scss";
+import "./TopSeries.scss"
 
 interface IProps {}
 
+const onChange = (currentSlide: number) => {
+  console.log(currentSlide);
+};
+
 const { Meta } = Card;
 
-const NewReleases = (props: IProps) => {
+const TopFilms = (props: IProps) => {
   return (
-    <div id="releases">
-      <h2 className="text-primary">New Releases</h2>
-      <Carousel>
-        <div className="films">
+    <div id="top-series">
+      <h2 className="text-primary">IMDb Top 100 Tv Series</h2>
+      <Carousel afterChange={onChange}>
+        <div className="series">
           <Card
             hoverable
             className="cards"
@@ -43,4 +47,4 @@ const mapStateToProps = (store: IStore) => {
   return {};
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(NewReleases);
+export default connect(mapStateToProps, mapDispatchToProps)(TopFilms);

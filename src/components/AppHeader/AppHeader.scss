@@ -1,17 +1,11 @@
 #app-header {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: 60px;
     background: #121212;
     width: 100%;
-
     .logo {
         width: 55px;
     }
-    .search {
-        width: 300px;
-        margin: 0 15px 0 15px;
-    }
-
 }

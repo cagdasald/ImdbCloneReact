@@ -1,20 +1,19 @@
-#releases {
+#top-series {
     display: flex;
     flex-direction: column;
 
-    .films {
-        height: 550px;
+    .series {
+        height: 500px;
         display: flex;
-
+        
         .cards {
             width: 250px;
-            height: 450px;
+            height: 425px;
             margin: 0 10px;
 
-            img {
-                height: 360px;
+            img{
+                height: 330px;
             }
         }
     }
-
 }
